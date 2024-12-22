@@ -9,13 +9,13 @@ find the sum of all the Multiples of 3 or 5 below 1000.
 using namespace std;
 
 int main(){
-    int n = 1000;
+    const int n = 1000; 
     int sum = 0;
-    for (int i = 1;i<n;i++){
-       if(i%3==0||i%5==0){
-        sum = sum + i;
-       }
+    for (int i = 1; i < n; i++){
+        if(i % 3 == 0 || i % 5 == 0){
+            sum += i; 
+        }
     }
-    cout << "\n The sum of all the Multiples of 3 or 5 below 1000 is: " << sum;
+    cout << "The sum of all the Multiples of 3 or 5 below 1000 is: " << sum; 
     return 0;
 }
